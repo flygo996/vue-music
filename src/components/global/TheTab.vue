@@ -1,7 +1,5 @@
 <template>
-  <div class="the-tab">
-    
-  </div>
+  <div class="the-tab"></div>
 </template>
 <script>
 export default {
@@ -22,7 +20,7 @@ export default {
     }
   },
   created() {
-    
+
   },
   mounted() {
 
@@ -33,7 +31,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-  .the-tab{
-    color: blue;
-  }
+.the-tab {
+  color: blue;
+}
 </style>

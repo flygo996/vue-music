@@ -2,7 +2,7 @@
  * @Author: laifeipeng 
  * @Date: 2019-03-15 16:03:42 
  * @Last Modified by: laifeipeng
- * @Last Modified time: 2019-03-15 18:39:36
+ * @Last Modified time: 2019-03-15 18:57:40
  */
 const path = require('path')
 const reslove = file => path.resolve(__dirname, '../src', file)
@@ -34,7 +34,7 @@ export default {
     }
   },
   created() {
-    
+
   },
   mounted() {
 
