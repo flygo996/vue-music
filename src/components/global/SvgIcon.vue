@@ -19,6 +19,7 @@ export default {
   },
   computed: {
     iconName() {
+      // 引用的是阿里巴巴图标库中的24gl的图标
       return `#icon-24gl-${this.iconClass}`
     },
     svgClass() {

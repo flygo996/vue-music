@@ -3,7 +3,7 @@
 </template>
 <script>
 export default {
-  name: 'SvgIcon',
+  name: 'Demo',
   props: {
 
   }
