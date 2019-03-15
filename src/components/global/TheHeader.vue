@@ -12,10 +12,10 @@ export default {
       type: String,
       default: 'laifeipeng'
     },
-    test: {
-      type: String | Array,
-      required: true
-    },
+    // test: {
+    //   type: String | Array,
+    //   required: true
+    // },
   },
   data() {
     return {
@@ -23,7 +23,7 @@ export default {
     }
   },
   created() {
-    
+
   },
   mounted() {
 

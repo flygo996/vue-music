@@ -2,7 +2,7 @@
  * @Author: laifeipeng 
  * @Date: 2019-03-15 16:03:42 
  * @Last Modified by: laifeipeng
- * @Last Modified time: 2019-03-15 18:57:40
+ * @Last Modified time: 2019-03-15 19:03:25
  */
 const path = require('path')
 const reslove = file => path.resolve(__dirname, '../src', file)
@@ -23,10 +23,10 @@ export default {
       type: String,
       default: 'laifeipeng'
     },
-    test: {
-      type: String | Array,
-      required: true
-    },
+    // test: {
+    //   type: String | Array,
+    //   required: true
+    // },
   },
   data() {
     return {
