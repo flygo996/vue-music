@@ -37,7 +37,7 @@ vue cli 3 使用 vue create vue-music 搭建项目，使用vue-router、vuex、s
 
 ## 2、图标准备
 从阿里巴巴图标库（https://www.iconfont.cn/）找到需要用的图标，symbol引用（svg格式）。
-使用svg组件引入，并且可以自定义颜色。
+使用svg组件引入，并且可以自定义颜色。（注意需要先批量去色，否则不能修改颜色。）
 
 ### 3、基础样式
 scss文件夹添加基础样式文件，包括variable.scss、reset.scss、mixin.scss等
