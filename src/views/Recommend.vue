@@ -22,17 +22,18 @@
               :key="index"
               class="item"
             >
+              <!-- 这里先跳转到URL，后期跳转到自己的路由 -->
               <a :href="item.id | idToUrl">
                 <div class="icon">
                   <img v-lazy="item.picUrl">
                 </div>
                 <div class="text">
-                  <h1>
-                    <svg-icon icon-class="headphones"></svg-icon>
-                    {{item.accessnum}}
-                  </h1>
                   <h2 class="name" v-html="item.songListAuthor"></h2>
                   <p class="desc" v-html="item.songListDesc"></p>
+                  <h1>
+                    <svg-icon icon-class="headphones"></svg-icon>
+                    {{item.accessnum | bigNumFormat}}
+                  </h1>
                 </div>
               </a>
             </li>
@@ -91,7 +92,6 @@ export default {
       }
     },
     selectItem(item) {
-      return ''
       // this.$router.push({
       //   path: `/recommend/${item.dissid}`
       // })
