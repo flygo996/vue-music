@@ -2,7 +2,7 @@
  * @Author: laifeipeng 
  * @Date: 2019-03-15 16:03:42 
  * @Last Modified by: laifeipeng
- * @Last Modified time: 2019-03-15 19:03:37
+ * @Last Modified time: 2019-03-16 10:16:32
  */
 const path = require('path')
 const reslove = file => path.resolve(__dirname, '../src', file)
@@ -17,17 +17,7 @@ const tpl = module => (
 
 <script>
 export default {
-  name: '${formatHyphen(module)}',
-  props: {
-    name: {
-      type: String,
-      default: 'laifeipeng'
-    },
-    // test: {
-    //   type: String | Array,
-    //   required: true
-    // },
-  },
+  name: '${formatHyphen(module)}',  
   data() {
     return {
       show: false

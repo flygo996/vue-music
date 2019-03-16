@@ -1,4 +1,4 @@
-import jsonp from '../utils/jsonp'
+import jsonp from './jsonp'
 import { commonParams, options } from './config'
 
 export function getSingerList () {
