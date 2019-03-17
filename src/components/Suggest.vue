@@ -66,7 +66,7 @@ export default {
       if (!newQuery) {
         return
       }
-      this.search(newQuery)
+      this.search()
     }
   },
   methods: {
@@ -77,13 +77,15 @@ export default {
       this.page = 1
       this.hasMore = true
       this.$refs.suggest.scrollTo(0, 0)
-      search(this.query, this.page, this.showSinger, perpage).then((res) => {
-        if (res.code === ERR_OK) {
-          this._genResult(res.data).then((result) => {
-            this.result = result
-          })
-          this._checkMore(res.data)
-        }
+      search(this.query, this.page).then((res) => {
+        console.log(11111)
+        console.log(res)
+        // if (res.code === ERR_OK) {
+        //   this._genResult(res.data).then((result) => {
+        //     this.result = result
+        //   })
+        //   this._checkMore(res.data)
+        // }
       })
     },
     searchMore() {
@@ -91,13 +93,15 @@ export default {
         return
       }
       this.page++
-      search(this.query, this.page, this.showSinger, perpage).then((res) => {
-        if (res.code === ERR_OK) {
-          this._genResult(res.data).then((result) => {
-            this.result = this.result.concat(result)
-          })
-          this._checkMore(res.data)
-        }
+      search(this.query, this.page).then((res) => {
+        console.log(222222)
+        console.log(res)
+        // if (res.code === ERR_OK) {
+        //   this._genResult(res.data).then((result) => {
+        //     this.result = this.result.concat(result)
+        //   })
+        //   this._checkMore(res.data)
+        // }
       })
     },
     listScroll() {

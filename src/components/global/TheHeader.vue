@@ -2,9 +2,9 @@
   <div class="the-header">
     <div class="icon"></div>
     <h1 class="text">Lypeng Music</h1>
-    <router-link tag="div" class="mine" to="/user">
+    <!-- <router-link tag="div" class="mine" to="/user">
       <svg-icon class-name="user" icon-class="user"></svg-icon>
-    </router-link>
+    </router-link> -->
   </div>
 </template>
 

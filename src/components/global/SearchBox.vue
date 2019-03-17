@@ -1,11 +1,8 @@
 <template>
   <div class="search-box">
-    <svg-icon icon-class="search2"></svg-icon>
-    <!-- <i class="icon-search"></i> -->
+    <svg-icon icon-class="search2" class-name="icon-search"></svg-icon>
     <input ref="query" v-model="query" class="box" :placeholder="placeholder">
-    <svg-icon @click="clear" v-show="query" icon-class="cross"></svg-icon>
-    <svg-icon @click="clear" v-show="query" icon-class="errorCircle"></svg-icon>
-    <!-- <i @click="clear" v-show="query" class="icon-dismiss"></i> -->
+    <svg-icon @click="clear" v-show="query" icon-class="errorCircle" class-name="icon-errorCircle"></svg-icon>
   </div>
 </template>
 
@@ -52,20 +49,20 @@ export default {
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  padding: 0 6px;
-  height: 40px;
+  padding: 0 12px;
+  height: 80px;
   background: $color-highlight-background;
-  border-radius: 6px;
+  border-radius: 12px;
 
   .icon-search {
-    font-size: 24px;
-    color: $color-background;
+    font-size: 40px;
+    fill: $color-background;
   }
 
   .box {
     flex: 1;
-    margin: 0 5px;
-    line-height: 18px;
+    margin: 0 10px;
+    line-height: 36px;
     background: $color-highlight-background;
     color: $color-text;
     font-size: $font-size-medium;
@@ -75,9 +72,9 @@ export default {
       color: $color-text-d;
     }
 
-    .icon-dismiss {
-      font-size: 16px;
-      color: $color-background;
+    .icon-errorCircle {
+      font-size: 32px;
+      fill: $color-background;
     }
   }
 }

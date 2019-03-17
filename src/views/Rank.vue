@@ -9,7 +9,7 @@
           <ul class="songlist">
             <li class="song" v-for="(song,index) in item.songList" :key="index">
               <span>{{index + 1}}、</span>
-              <span>{{song.songname}} -- {{song.singername}}</span>
+              <span>{{song.songname}} — {{song.singername}}</span>
             </li>
           </ul>
         </li>
@@ -85,7 +85,7 @@ export default {
     height: 100%;
     overflow: hidden;
     .item {
-      $width: 200px;
+      $width: 280px;
       display: flex;
       margin: 0 20px;
       padding-top: 20px;

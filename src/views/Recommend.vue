@@ -28,7 +28,7 @@
                   <img v-lazy="item.picUrl">
                 </div>
                 <div class="text">
-                  <h2 class="name" v-html="item.songListAuthor"></h2>
+                  <h1 class="name" v-html="item.songListAuthor"></h1>
                   <p class="desc" v-html="item.songListDesc"></p>
                   <h1>
                     <svg-icon icon-class="headphones"></svg-icon>
@@ -156,7 +156,7 @@ export default {
         margin: 0 20px 30px 20px;
         a {
           display: block;
-          height: 100%;
+          height: 110%;
           width: 100%;
           display: flex;
           box-sizing: border-box;
@@ -186,13 +186,14 @@ export default {
           justify-content: center;
           padding-left: 20px;
           flex: 1;
-          // line-height: 20px;
+          line-height: 50px;
           overflow: hidden;
           font-size: $font-size-medium;
 
           .name {
             margin-bottom: 10px;
-            color: $color-text;
+            color: $color-text-2;
+            font-size: $font-size-large;
           }
 
           .desc {

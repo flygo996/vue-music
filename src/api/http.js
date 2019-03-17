@@ -2,7 +2,7 @@
  * @Author: laifeipeng 
  * @Date: 2019-03-15 21:31:55 
  * @Last Modified by: laifeipeng
- * @Last Modified time: 2019-03-15 22:03:46
+ * @Last Modified time: 2019-03-16 12:00:31
  */
 
 import axios from 'axios'
@@ -31,7 +31,7 @@ export function doPost(url, param) {
       }
     })
     .catch(e => {
-      return Promise.reject(`[${e}]，post请求获取数据失败,请稍后再试`)
+      return Promise.reject(e)
     })
 }
 
@@ -53,7 +53,7 @@ export function doGet(url, param) {
       }
     })
     .catch(e => {
-      return Promise.reject(`[${e}]，get请求获取数据失败,请稍后再试`)
+      return Promise.reject(e)
     })
 }
 
